@@ -1,0 +1,53 @@
+using System;
+
+class Animal
+{
+    public virtual void Speak()
+    {
+        Console.WriteLine("Animal Speaks");
+
+    }
+}
+
+class Lion : Animal
+{
+    public override void Speak()
+    {
+        Console.WriteLine("The animal is roaring");
+    }
+
+}
+class Snake : Animal
+{
+    public override void Speak()
+    {
+        Console.WriteLine("The animal is hissing");
+    }
+}
+
+class Jaguar : Animal
+    {
+        public override void Speak()
+        {
+            Console.WriteLine("The animal is boasing");
+        }
+    }
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Animal myLion = new Lion();
+        myLion.Speak();
+
+        Animal mySnake = new Snake();
+        mySnake.Speak();
+
+        Animal myJaguar = new Jaguar();
+        myJaguar.Speak();
+
+
+        Console.ReadLine();
+    }
+ 
+}
